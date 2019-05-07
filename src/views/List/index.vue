@@ -52,8 +52,8 @@ export default {
     async changePage(page) {
       this.pagination.current = page
       this.loading = true
-      this.$router.push({ name: 'List', query: { page }})
       try {
+        this.$router.push({ name: 'List', query: { page }})
         const { data } = await getReportAtPage(page)
         this.pagination.total = data.total
         this.pagination.size = data.per_page

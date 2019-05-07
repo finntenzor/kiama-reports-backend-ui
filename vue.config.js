@@ -1,6 +1,6 @@
 module.exports = {
   assetsDir: '.',
-  publicPath: './{$STATIC_URL}',
+  publicPath: process.env.NODE_ENV === 'development' ? '' : './{$STATIC_URL}',
   productionSourceMap: false,
   devServer: {
     proxy: {

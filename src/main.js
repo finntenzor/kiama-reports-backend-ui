@@ -9,8 +9,9 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
+Vue.mixin(reportErrorMixin)
+
 new Vue({
-  mixins: [reportErrorMixin],
   router,
   render: h => h(App)
 }).$mount('#app')
