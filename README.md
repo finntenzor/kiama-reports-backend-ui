@@ -1,5 +1,10 @@
 # kiama-reports-backend-ui
 
+## TODO
+1. 添加手动输入异常
+2. 添加批量删除
+3. 根据异常信息内容自动产生颜色，增加辨识度
+
 ## Project setup
 ```
 yarn install
